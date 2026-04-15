@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elie's Web site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        
+        .top-bar {
+            background-color: #0000FF; /* Pure Blue */
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            width: 150px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .search-button {
+            margin-left: 5px;
+            padding: 2px 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        /* Layout Container */
+        .content-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #FFFF33; /* Bright Yellow */
+            width: 200px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 5px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .site-title {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content-image {
+            width: 350px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 15px;
+            line-height: 1.4;
+            max-width: 800px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <input type="text" class="search-box">
+        <button class="search-button" onclick="alert('Searching...')">Search...</button>
+    </div>
+
+    <div class="content-wrapper">
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Doc</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1 class="site-title">My Web site</h1>
+            
+            <img src="Assingmentimage.png" alt="Hardware Image" class="content-image">
+
+            <p class="description">
+                As the software industry moves into the second decade of the 21st century, software quality is increasingly becoming essential to all businesses and knowledge of software testing is becoming necessary for all software engineers. The course focus on the theoretical concepts of Software Testing with high emphasis on inclusion of the practical context which is equally needed to prepare the learner for the demands of this field in the workplace.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
