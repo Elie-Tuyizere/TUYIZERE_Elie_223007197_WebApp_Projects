@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+<style>
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.form-row label:first-child {
+    width: 140px;
+    font-size: 14px;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid #000;
+    padding: 4px 6px;
+    font-family: "Times New Roman";
+}
+
+.small-input { width: 200px; }
+.medium-input { width: 260px; }
+
+textarea {
+    height: 50px;
+    width: 260px;
+}
+
+select {
+    border: 1px solid #000;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.inline {
+    margin-right: 15px;
+}
+
+/* HOBBIES */
+.hobbies-row {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.hobbies-row label:first-child {
+    width: 140px;
+}
+
+.hobbies-line {
+    margin-left: 140px;
+    margin-top: 5px;
+}
+
+/* TABLE */
+table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 5px;
+    text-align: left;
+}
+
+table input {
+    width: 170px;
+    border: 1px solid #000;
+    height: 22px;
+}
+
+/* ✅ NOTES OUTSIDE TABLE (ALIGNED PERFECTLY) */
+.table-notes {
+    display: grid;
+    grid-template-columns: 8% 22% 25% 22% 23%;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.table-notes div {
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* BUTTONS */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 25px;
+    margin: 0 10px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<form>
+
+<div class="form-row">
+<label>FIRST NAME</label>
+<input type="text" class="small-input">
+</div>
+
+<div class="form-row">
+<label>LAST NAME</label>
+<input type="text" class="small-input">
+</div>
+
+<div class="form-row">
+<label>DATE OF BIRTH</label>
+<select><option>Day</option></select>
+<select><option>Month</option></select>
+<select><option>Year</option></select>
+</div>
+
+<div class="form-row">
+<label>EMAIL ID</label>
+<input type="email" class="small-input">
+</div>
+
+<div class="form-row">
+<label>MOBILE NUMBER</label>
+<input type="tel" class="medium-input">
+</div>
+
+<div class="form-row">
+<label>GENDER</label>
+<label class="inline"><input type="radio" name="gender"> Male</label>
+<label class="inline"><input type="radio" name="gender"> Female</label>
+</div>
+
+<div class="form-row">
+<label>ADDRESS</label>
+<textarea></textarea>
+</div>
+
+<div class="form-row">
+<label>CITY</label>
+<input type="text" class="small-input">
+</div>
+
+<div class="form-row">
+<label>PIN CODE</label>
+<input type="text" class="medium-input">
+</div>
+
+<div class="form-row">
+<label>STATE</label>
+<input type="text" class="small-input">
+</div>
+
+<div class="form-row">
+<label>COUNTRY</label>
+<input type="text" value="India" class="small-input">
+</div>
+
+<!-- HOBBIES -->
+<div class="hobbies-row">
+<label>HOBBIES</label>
+<label class="inline"><input type="checkbox"> Drawing</label>
+<label class="inline"><input type="checkbox"> Singing</label>
+<label class="inline"><input type="checkbox"> Dancing</label>
+<label class="inline"><input type="checkbox"> Sketching</label>
+</div>
+
+<div class="hobbies-line">
+<label class="inline"><input type="checkbox"> Others</label>
+<input type="text" class="small-input">
+</div>
+
+<h3>QUALIFICATION</h3>
+
+<table>
+<tr>
+<th>Sl.No</th>
+<th>Examination</th>
+<th>Board</th>
+<th>Percentage</th>
+<th>Year of Passing</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+</table>
+
+<!-- ✅ NOTES OUTSIDE TABLE -->
+<div class="table-notes">
+    <div></div>
+    <div></div>
+    <div>(10 char max)</div>
+    <div>(upto 2 decimal)</div>
+    <div></div>
+</div>
+
+<div class="form-row">
+<label>COURSES APPLIED FOR</label>
+<label class="inline"><input type="radio" name="course"> BCA</label>
+<label class="inline"><input type="radio" name="course"> B.Com</label>
+<label class="inline"><input type="radio" name="course"> B.Sc</label>
+<label class="inline"><input type="radio" name="course"> B.A</label>
+</div>
+
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
